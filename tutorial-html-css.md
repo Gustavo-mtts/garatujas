@@ -8,7 +8,7 @@ Antes de começar, é recomendado ter um ambiente de desenvolvimento preparado, 
 
 ## HTML - HyperText Markup Language (Linguagem de Marcação de Hipertexto)
 
-O HTML (Linguagem de Marcação de Hipertexto) é a base de qualquer página web. Ele não é uma linguagem de programação, mas sim uma linguagem de marcação, ou seja, serve para organizar e estruturar o conteúdo da página. Isso inclui textos, títulos, links, imagens e outros elementos. Além da parte visual, o HTML também é importante para acessibilidade, pois organiza o conteúdo de forma que diferentes tipos de usuários, incluindo pessoas com deficiência, consigam entender e navegar na página.
+-O HTML (Linguagem de Marcação de Hipertexto) é a base de qualquer página web. Ele não é uma linguagem de programação, mas sim uma linguagem de marcação, ou seja, serve para organizar e estruturar o conteúdo da página. Isso inclui textos, títulos, links, imagens e outros elementos. Além da parte visual, o HTML também é importante para acessibilidade, pois organiza o conteúdo de forma que diferentes tipos de usuários, incluindo pessoas com deficiência, consigam entender e navegar na página.
 
 O funcionamento do HTML é feito por meio de tags, que são como etiquetas que indicam o tipo de conteúdo. Essas tags geralmente têm uma abertura e um fechamento, e o conteúdo fica entre elas, como no caso de um parágrafo: `<p>texto</p>`. Existem várias tags diferentes, como `<h1>` para títulos e `<a>` para links. Também existem atributos, que são informações extras dentro das tags, como o `href` em links, que define para onde o usuário será levado, ou o `src`, que indica a origem de uma imagem.
 
