@@ -1,94 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>Formulário de fã do TYLER, THE CREATOR</title>
+    <title>Formulário de fã do TYLER, THE CREATOR</title>
 
-        <link rel="stylesheet" href="style.css">
-        <style>
-            body {
-                border: 2px;
-                padding: 1em;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                background: url(image-1.png);
+    <link rel="stylesheet" href="style.css">
 
-            }
+    <style>
+        body {
+            padding: 1em;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            min-height: 100vh;
+            background: url(image-1.png) no-repeat center center fixed;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        form {
+            background: rgba(255, 112, 179, 0.336); 
+            padding: 20px;
+            border-radius: 8px;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
 
-        </style>
-    </head>
-    <body>
+    <h2>Tyler, The Creator: FORMULÁRIO DE FÃ</h2>
 
-        <h2>Tyler, The Creator FORMULÁRIO DE FÃ</h2>
-        <form action="#" method="post">
-            <fieldset>
-                <p>Se cadastre aqui bro:</p>
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input type="texto" name="nome" id="nome" placeholder="DIGITA O NOME KRLH" required>
-                </div>
-
-                <div>
-                    <label for="sobrenome">Sobrenome:</label>
-                    <input type="texto" name="sobrenome" id="sobrenome" placeholder="DIGITA O SEU SOBRENOME BRO" required>
-                </div>
-
-                <div>
-                   <label for="email">E-mail:</label>
-                   <input type="email" name="email" id="email" placeholder="coloque o email para eu te rastrear rsrs" required>
-                </div>
-
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="senha" name="senha" id="senha" placeholder="vo invadir tua casa se tu n colocar a senha nigga">
-                </div>
-
-                <div>
-                    <p>Nigga coloque seu gênero:</p>
-                     <input type="radio" id="masc" name="genero" value="m">
-                     <label for="masc">Masculino</label>
-
-                     <input type="radio" id="fem" name="genero" value="f">
-                     <label for="fem">Feminino</label>
-
-                    <p>seus albuns favoritos do tyler!:</p>
-                     <input type="checkbox" id="Bastard" name="interesse" value="Bastard">
-                     <label for="Bastard">BASTARD</label>
-
-                     <input type="checkbox" id="Goblin" name="interesse" value="Goblin">
-                     <label for="Goblin">GOBLIN</label>
-
-                     <input type="checkbox" id="Wolf" name="interesse" value="Wolf">
-                     <label for="Wolf">WOLF</label>
-
-                     <input type="checkbox" id="Cherry Bomb" name="interesse" value="Cherry Bomb>
-                     <label for="Cherry Bomb">CHERRY BOMB</label>
-
-                     <input type="checkbox" id="Flower Boy" name="interesse" value="Flower Boy">
-                     <label for="">FLOWER BOY</label>
-
-                     <input type="checkbox" id="Igor" name="interesse" value="Igor">
-                     <label for="Igor">IGOR</label>
-
-                     <input type="checkbox" id="Call Me If You Get Lost" name="interesse" value="Call If You Get Lost">
-                     <label for="Call Me If You Get Lost">CALL ME IF YOU GET LOST</label>
-
-                     <input type="checkbox" id="Chromakopia" name="interesse" value="Chromakopia">
-                     <label for="Chromakopia">CHROMAKOPIA</label>
-
-                     <input type="checkbox" id="Dont Tap The Glass" name="interesse" value="Dont Tap The Glass">
-                     <label for="Dont Tap The Glass">DONT TAP THE GLASS</label>
-
-                </div>
-
-            </fieldset>
-
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Se cadastre aqui, bro:</legend>
             
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="DIGITA O NOME KRLH" required>
+            </div>
 
-        </form>
+            <div>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="DIGITA O SEU SOBRENOME SE N EU TE DO UM TIRO" required>
+            </div>
 
-    </body>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="vo te rastrear se tu n colocar o email" required>
+            </div>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="faz a senha neh pae" required>
+            </div>
+
+            <div>
+                <p>Selecione seu gênero:</p>
+                <input type="radio" id="masc" name="genero" value="m">
+                <label for="masc">Masculino</label>
+
+                <input type="radio" id="fem" name="genero" value="f">
+                <label for="fem">Feminino</label>
+            </div>
+
+            <div>
+                <p>Seus álbuns favoritos do Tyler:</p>
+                
+                <input type="checkbox" id="Bastard" name="interesse" value="Bastard">
+                <label for="Bastard">BASTARD</label><br>
+
+                <input type="checkbox" id="Goblin" name="interesse" value="Goblin">
+                <label for="Goblin">GOBLIN</label><br>
+
+                <input type="checkbox" id="Wolf" name="interesse" value="Wolf">
+                <label for="Wolf">WOLF</label><br>
+
+                <input type="checkbox" id="CherryBomb" name="interesse" value="Cherry Bomb">
+                <label for="CherryBomb">CHERRY BOMB</label><br>
+
+                <input type="checkbox" id="FlowerBoy" name="interesse" value="Flower Boy">
+                <label for="FlowerBoy">FLOWER BOY</label><br>
+
+                <input type="checkbox" id="Igor" name="interesse" value="Igor">
+                <label for="Igor">IGOR</label><br>
+
+                <input type="checkbox" id="CMIYGL" name="interesse" value="Call If You Get Lost">
+                <label for="CMIYGL">CALL ME IF YOU GET LOST</label><br>
+
+                <input type="checkbox" id="Chromakopia" name="interesse" value="Chromakopia">
+                <label for="Chromakopia">CHROMAKOPIA</label>
+
+                <input type="checkbox" id="DTTG" name="interesse" value="Dont Tap The Glass">
+                <label for="DTTG">DONT TAP THE GLASS</label>
+            </div>
+
+            <button type="submit">ENVIAR FORMULÁRIO DE FÃ</button>
+
+        </fieldset>
+    </form>
+
+</body>
 </html>
