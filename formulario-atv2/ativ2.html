@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <title>Formulário de fã do TYLER, THE CREATOR</title>
+
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                border: 2px;
+                padding: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url(image-1.png);
+
+            }
+
+        </style>
     </head>
     <body>
 
+        <h2>Tyler, The Creator FORMULÁRIO DE FÃ</h2>
         <form action="#" method="post">
             <fieldset>
+                <p>Se cadastre aqui bro:</p>
                 <div>
-                    <label>nome</label>
-                    <input type="texto" name="nome" id="nome">
+                    <label for="nome">Nome:</label>
+                    <input type="texto" name="nome" id="nome" placeholder="DIGITA O NOME KRLH" required>
                 </div>
 
                 <div>
-                    <label>sobrenome</label>
-                    <input type="texto" name="sobrenome" id="sobrenome">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="texto" name="sobrenome" id="sobrenome" placeholder="DIGITA O SEU SOBRENOME BRO" required>
                 </div>
 
                 <div>
-                   <label>email</label>
-                   <input type="email" name="email" id="email">
+                   <label for="email">E-mail:</label>
+                   <input type="email" name="email" id="email" placeholder="coloque o email para eu te rastrear rsrs" required>
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="senha" name="senha" id="senha" placeholder="vo invadir tua casa se tu n colocar a senha nigga">
                 </div>
 
                 <div>
