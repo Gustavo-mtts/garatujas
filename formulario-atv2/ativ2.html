@@ -1,99 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
     <title>Formulário de fã do TYLER, THE CREATOR</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        body {
-            padding: 1em;
-            display: flex;
-            flex-direction: column; 
-            align-items: center;
-            min-height: 100vh;
-            background: url(image-1.png) no-repeat center center fixed;
-            background-size: cover;
-            font-family: sans-serif;
-        }
-        form {
-            background: rgba(255, 112, 179, 0.336); 
-            padding: 20px;
-            border-radius: 8px;
-        }
-        div {
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
+
 <body>
 
-    <h2>Tyler, The Creator: FORMULÁRIO DE FÃ</h2>
+    <h1>Tyler, The Creator: FORMULÁRIO DE FÃ</h1>
 
-    <form action="#" method="post">
+    <form action="#" method="get">
         <fieldset>
             <legend>Se cadastre aqui, bro:</legend>
-            
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="DIGITA O NOME KRLH" required>
+
+            <div class="input-group">
+                <label for="matricula">Número de matrícula:</label>
+                <input type="text" name="matricula" id="matricula" placeholder="123cmoiseucucomchines..." required>
             </div>
 
-            <div>
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="DIGITA O SEU SOBRENOME SE N EU TE DO UM TIRO" required>
+            <div class="input-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digita aí se n eu te dou um tiro..." required>
             </div>
 
-            <div>
+            <div class="input-group">
                 <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="vo te rastrear se tu n colocar o email" required>
+                <input type="email" name="email" id="email" placeholder="E-mail pra eu te rastrear" required>
             </div>
 
-            <div>
+            <div class="input-group">
                 <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" placeholder="faz a senha neh pae" required>
+                <input type="password" name="senha" id="senha" placeholder="Cria uma do krlh prfv" required>
             </div>
 
-            <div>
+            <div class="selection-group">
                 <p>Selecione seu gênero:</p>
-                <input type="radio" id="masc" name="genero" value="m">
-                <label for="masc">Masculino</label>
-
-                <input type="radio" id="fem" name="genero" value="f">
-                <label for="fem">Feminino</label>
+                <div class="radio-item">
+                    <input type="radio" id="masc" name="genero" value="m">
+                    <label for="masc">Masculino</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="fem" name="genero" value="f">
+                    <label for="fem">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" id="outro" name="genero" value="o">
+                    <label for="outro">Outro</label>
+                    <input type="text" id="especificar-input" name="genero_outro" placeholder="Pode ser abrir sobre seu genero bro, ta tudo bem">
+                </div>
             </div>
 
-            <div>
-                <p>Seus álbuns favoritos do Tyler:</p>
-                
-                <input type="checkbox" id="Bastard" name="interesse" value="Bastard">
-                <label for="Bastard">BASTARD</label><br>
+            <div class="selection-group">
+                <p>Seus álbuns favoritos:</p>
 
-                <input type="checkbox" id="Goblin" name="interesse" value="Goblin">
-                <label for="Goblin">GOBLIN</label><br>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="Bastard" name="albuns" value="Bastard">
+                    <label for="Bastard">BASTARD</label>
+                </div>
 
-                <input type="checkbox" id="Wolf" name="interesse" value="Wolf">
-                <label for="Wolf">WOLF</label><br>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="Goblin" name="albuns" value="Goblin">
+                    <label for="Goblin">GOBLIN</label>
+                </div>
 
-                <input type="checkbox" id="CherryBomb" name="interesse" value="Cherry Bomb">
-                <label for="CherryBomb">CHERRY BOMB</label><br>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="Wolf" name="albuns" value="Wolf">
+                    <label for="Wolf">WOLF</label>
+                </div>
 
-                <input type="checkbox" id="FlowerBoy" name="interesse" value="Flower Boy">
-                <label for="FlowerBoy">FLOWER BOY</label><br>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="CherryBomb" name="albuns" value="Cherry Bomb">
+                    <label for="CherryBomb">CHERRY BOMB</label>
+                </div>
 
-                <input type="checkbox" id="Igor" name="interesse" value="Igor">
-                <label for="Igor">IGOR</label><br>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="FlowerBoy" name="albuns" value="Flower Boy">
+                    <label for="FlowerBoy">FLOWER BOY</label>
+                </div>
 
-                <input type="checkbox" id="CMIYGL" name="interesse" value="Call If You Get Lost">
-                <label for="CMIYGL">CALL ME IF YOU GET LOST</label><br>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="Igor" name="albuns" value="Igor">
+                    <label for="Igor">IGOR</label>
+                </div>
 
-                <input type="checkbox" id="Chromakopia" name="interesse" value="Chromakopia">
-                <label for="Chromakopia">CHROMAKOPIA</label>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="CMIYGL" name="albuns" value="Call Me If You Get Lost">
+                    <label for="CMIYGL">CALL ME IF YOU GET LOST</label>
+                </div>
 
-                <input type="checkbox" id="DTTG" name="interesse" value="Dont Tap The Glass">
-                <label for="DTTG">DONT TAP THE GLASS</label>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="Chromakopia" name="albuns" value="Chromakopia">
+                    <label for="Chromakopia">CHROMAKOPIA</label>
+                </div>
+
+                <div class="checkbox-item">
+                    <input type="checkbox" id="DTTG" name="albuns" value="Dont Tap The Glass">
+                    <label for="DTTG">DONT TAP THE GLASS</label>
+                </div>
             </div>
 
             <button type="submit">ENVIAR FORMULÁRIO DE FÃ</button>
@@ -102,4 +108,5 @@
     </form>
 
 </body>
+
 </html>
